@@ -1,0 +1,149 @@
+body, html{
+    height: 100%;
+    background-color: #322153;
+}
+
+/* #page-register header{
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    background-color: #322153;
+} */
+#page-register header .nav span{
+    width: 160px;
+    display: flex;
+    align-items: center;
+}
+.fa-arrow-left:before {
+    content: "\f060";
+    font-size: 15px;
+    color: #34CB79;
+}
+
+#page-register header .nav a{
+    color: #f0f0f5;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#page-register header .nav img{
+    width: 10%;
+}
+
+#page-register header .nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+form h1{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+form p{
+    display: flex;
+    align-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #212529;
+    line-height: 50px;
+}
+
+.fa-heart:before {
+    content: "\f004";
+    padding-left: 10px;
+    color: #322153;
+}
+
+form{
+    max-width: 630px;
+    margin: 0 auto;
+    background-color: #f0f0f5;
+    margin-top: 80px;
+    border-radius: 8px;
+    padding: 60px;
+}
+
+form fieldset{
+    margin-top: 40px;
+    border: 0;
+}
+
+form fieldset legend{
+    margin-bottom: 30px;
+}
+
+fieldset h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+fieldset small{
+    color: #495057;
+}
+
+form .field{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 14px;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.field input, select{
+    margin-bottom: 20px;
+    background-color: #e5e5e5;
+    border: 0;
+    padding: 16px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: rgba(50, 33, 83, 0.7);
+}
+
+
+.field select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form .field__group{
+    display: flex;
+}
+
+form .field__group .field + .field{
+    margin-left: 20px;
+}
+
+textarea{
+    resize: none;
+    border: 0;
+    border-radius: 4px;
+    background-color: #e5e5e5;
+    font-size: 16px;
+    color: rgba(50, 33, 83, 0.7);
+}
+
+form button{
+    width: 200px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #34CB79;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+form button:hover{
+    background-color: #08a045;
+}

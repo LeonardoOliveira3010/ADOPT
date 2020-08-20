@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles.css/main.css">
+    <link rel="stylesheet" href="../styles.css/partials.css/register.css">
+    <link rel="stylesheet" href="../styles.css/partials.css/modal.css">
+    <link rel="stylesheet" href="../styles.css/partials.css/responsive.css">
+    <title>Cadastrar pet</title>
+</head>
+<body>
+    <div id="page-register">
+            <header>
+                <div class="nav">
+                    <span>
+                        <i class="fas fa-arrow-left"></i><a href="../views/index.html">Voltar para home</a>
+                    </span>
+                    
+                    <img src="/img/adopet__register.svg" alt="">
+                </div>
+            </header>
+
+            <form action="" autocomplete="off">
+                <h1>Cadastre o pet para adoção</h1>
+                <p>Ajude nossos amigos a encontrar um lar <i class="fas fa-heart"></i></p>
+                <!--Fieldset é um agrupamento de dados dentro do form-->
+                <fieldset>
+                    <legend>
+                        <h2>Dados da entidade <small> (informações pessoais)</small></h2>
+                    </legend>
+                    
+                    <div class="field">
+                        <label for="name">Seu nome</label>
+                        <input type="text" name="name" id="name" placeholder="Ex: Leonardo Oliveira">
+
+                        <label for="fone">Telefone<small> (whatsapp)</small> </label>
+                        <input class="fone" type="text" name="fone" id="fone" placeholder="Ex: 11 99999-9999">
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Ex: exemplo@gmail.com">
+                    </div>
+            
+                    <div class="field__group">
+                        <div class="field">
+                            <label for="address">Endereço</label>
+                            <input type="text" name="address" id="address" placeholder="Rua tal">
+                        </div>
+
+                        <div class="field">
+                            <label for="address2">Número/Complemento</label>
+                            <input type="text" name="address2" id="address2" placeholder="Numero 154, apto 10">
+                        </div>
+                    </div>
+
+                    <div class="field__group">
+                        <div class="field">
+                            <label for="state">Estado</label>
+                            <select name="uf" id="">
+                                <option value="">Selecione o Estado</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled>
+                                <option value="">Selecione a Cidade</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><h2>Informações <small>(pet)</small></h2></legend>
+
+                    <div class="field">
+                        <label for="name">Nome do pet:</label>
+                        <input type="text" name="name" id="name" placeholder="Ex: Amarelinho">
+
+                        <label for="species">Especie</label>
+                        <input type="text" name="species" placeholder="Cachorro">
+                    </div>
+
+                    <div class="field__group">
+                        <div class="field">
+                            <label for="port">Porte:</label>
+                            <select name="port" id="">
+                                <option value="">Selecione o porte</option>
+                                <option value="0">Pequeno porte</option>
+                                <option value="1">Médio porte</option>
+                                <option value="2">Grande porte</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="personality">Personalidade:</label>
+                            <select name="personality" disabled>
+                                <option value="">Selecione a personalidade</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="photograph">Foto do pet: <small>(até 3 fotos)</small></label>
+                        <input type="file" name="photograph" id="photograph">
+                        <input type="file" name="photograph" id="photograph">
+                        <input type="file" name="photograph" id="photograph">
+
+                        <label for="story">História do pet</label>
+                        <textarea name="story" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                </fieldset>
+                <button class="done" type="submit" preve>Cadastrar o pet</button>
+            </form>
+    </div>
+
+    <div id="finished" class="modal__container">
+        <div class="modal">
+            <button class="close">X</button>
+            <h3>Cadastro finalizado com sucesso</h3>
+            <span><i class="fas fa-check-circle"></i></span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/392610c469.js" crossorigin="anonymous"></script>
+
+    <script src="../index.js"></script>
+</body>
+</html>
